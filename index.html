@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTO SLIDER</title>
+    <head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+
+                <div id="slider">
+
+                    <img src="photo1.jpg">
+                    <img src="photo2.jpg">
+                    <img src="photo3.jpg">
+                    <img src="photo4.jpg">
+
+
+
+
+                </div>
+</div>
+
+<button id="photo1">PHOTO 1</button>
+<button id="photo2">PHOTO 2 </button>
+<button id="photo3">PHOTO 3</button>
+<button id="photo4">PHOTO 4</button>
+
+</body>
+
+<script>
+
+document.getElementById("photo2").addEventListener("click",function() {
+document.getElementById("slider").classList.add("slide2");
+document.getElementById("slider").classList.remove("slide1");
+document.getElementById("slider").classList.remove("slide3");
+document.getElementById("slider").classList.remove("slide4");
+});
+
+document.getElementById("photo3").addEventListener("click",function() {
+document.getElementById("slider").classList.add("slide3");
+document.getElementById("slider").classList.remove("slide1");
+document.getElementById("slider").classList.remove("slide2");
+document.getElementById("slider").classList.remove("slide4");
+});
+
+document.getElementById("photo4").addEventListener("click",function() {
+document.getElementById("slider").classList.add("slide4");
+document.getElementById("slider").classList.remove("slide1");
+document.getElementById("slider").classList.remove("slide2");
+document.getElementById("slider").classList.remove("slide3");
+});
+
+document.getElementById("photo1").addEventListener("click",function() {
+document.getElementById("slider").classList.add("slide1");
+document.getElementById("slider").classList.remove("slide4");
+document.getElementById("slider").classList.remove("slide2");
+document.getElementById("slider").classList.remove("slide3");
+});
+
+</script>
+
+
+</html>

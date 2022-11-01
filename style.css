@@ -1,0 +1,78 @@
+body {
+    background:linear-gradient(to right,orange, orangered);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+#container {
+    height: 500px;
+    width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    border:5px solid  orangered;
+    overflow:hidden;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 0 20px black;
+    border-radius: 3px;
+}
+
+#slider {
+    height:500px;
+    width: 3200px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+  
+}
+
+#slider > img {
+    margin:auto;
+    height:500px;
+    width:800px;
+}
+
+button {
+    padding: 5px;
+    letter-spacing: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: orangered;
+    color: white;
+    border: none;
+    
+}
+
+button:hover {
+    background-color: rgb(87, 28, 7);
+    
+}
+
+button:active {
+    transform: translateY(3px);
+}
+
+#slider.slide1 {
+    position: absolute;
+    left:0px;
+    transition: 1500ms ease-in-out;
+}
+
+#slider.slide2 {
+    position: absolute;
+    left:-800px;
+    transition: 1500ms ease-in-out;
+}
+
+#slider.slide3 {
+    position: absolute;
+    left:-1600px;
+    transition: 1500ms ease-in-out;
+}
+
+#slider.slide4 {
+    position:absolute;
+    left:-2400px;
+    transition: 1500ms ease-in-out;
+}
